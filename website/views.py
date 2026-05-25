@@ -3,10 +3,10 @@ from django.http import HttpResponse
 
 
 def index_view(requests):
-    return HttpResponse('<h1> Home </h1>')
+    return render(requests , 'mytem/index.html')
 
 def about_view(requests):
-    return HttpResponse('<h1> About </h1>')
+    return render(requests , 'mytem/about.html')
 
 def contact_view(requests):
-    return HttpResponse('<h1> Contact </h1>')
+    return render(requests , 'mytem/contact.html')
